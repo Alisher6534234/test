@@ -1,0 +1,96 @@
+html{ box-sizing: border-box; }
+ *, *::before, *::after{ box-sizing: inherit; }
+img{
+  margin-right: 25px;
+}
+@font-face {
+  font-family: Lilita2;
+  src: local("Lilita2"),url(fonts/21154.otf);
+}
+header{
+  font-family: Lilita2;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  font-weight: lighter;
+}
+main{
+  background-image: url(images/fon.jpeg);
+  font-family: Lilita2;
+  font-style: oblique;
+  font-size: 20px;
+  font-variant: small-caps;
+  font-weight: lighter;
+}
+
+.d1{
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  position: absolute;
+  top: 0px; left: 0px;
+  z-index: 1;
+  border: 5px solid pink;
+}
+.d2{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: absolute;
+  top: 20px; left: 20px;
+  z-index: 3;
+  border: 5px solid green;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+.d3{
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  position: absolute;
+  top: 40px; left: 40px;
+  z-index: 2;
+  border: 5px solid purple;
+}
+
+.ul1{
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  margin-top:25px;
+  height: 50px;
+  background-color: red;
+}
+
+.li1{
+  float: left;
+  position: relative;
+}
+
+
+.ul1{
+  position: absolute;
+  top: 25px;
+  display: none;
+}
+
+.li1:hover > .ul1{
+  display: block;
+  width: 200px;
+}
+
+.li1:hover > .ul1 > .li1{
+  float: none;
+}
+
+.a1{
+  float: left;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  font-family: arial;
+  padding: 0px 10px;
+  line-height: 50px;
+  display: block;
+  border-right: 5px solid black;
+}

@@ -1,0 +1,62 @@
+.form{
+  margin-left: 1300px;
+  margin-top: 1px;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  margin-top:25px;
+  height: 50px;
+  background-color: beige;
+}
+
+li{
+  float: left;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+  background-color: beige;
+  color: black;
+  font-family: fantasy;
+  padding: 0px 10px;
+  line-height: 50px;
+  display: block;
+  border-right: 5px solid beige;
+}
+
+.ul1{
+  position: absolute;
+  top: 25px;
+  display: none;
+}
+
+li:hover > .ul1{
+  display: block;
+  width: 200px;
+}
+
+li:hover > .ul1 > .li1{
+  float: none;
+}
+
+.ser{
+  background-color: red;
+  color: white;
+}
+
+.fo{
+  background-color: beige;
+}
+
+.h11{
+  font-size: 150px;
+  width: 500px;
+}
+
+.sec1{
+  display: flex;
+  justify-content: space-between;
+}
